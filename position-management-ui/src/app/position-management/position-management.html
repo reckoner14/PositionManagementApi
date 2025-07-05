@@ -1,0 +1,63 @@
+<div class="container" style="max-width: 800px; margin: auto; padding: 20px;">
+  <h2>Equity Position Management</h2>
+
+  <form [formGroup]="transactionForm" (ngSubmit)="submitTransaction()" novalidate>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+      <div>
+        <label>Trade ID</label>
+        <input type="number" formControlName="tradeId" />
+      </div>
+      <div>
+        <label>Version</label>
+        <input type="number" formControlName="version" />
+      </div>
+      <div>
+        <label>Security Code</label>
+        <input type="text" formControlName="securityCode" />
+      </div>
+      <div>
+        <label>Quantity</label>
+        <input type="number" formControlName="quantity" />
+      </div>
+      <div>
+        <label>Action</label>
+        <select formControlName="action">
+          <option value="INSERT">INSERT</option>
+          <option value="UPDATE">UPDATE</option>
+          <option value="CANCEL">CANCEL</option>
+        </select>
+      </div>
+      <div>
+        <label>Buy/Sell</label>
+        <select formControlName="buySell">
+          <option value="Buy">Buy</option>
+          <option value="Sell">Sell</option>
+        </select>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px; text-align: right;">
+      <button type="submit" [disabled]="!transactionForm.valid">Submit Transaction</button>
+    </div>
+  </form>
+
+  <div style="margin-top: 40px;">
+    <h3>Current Positions</h3>
+    <table *ngIf="positions.length > 0">
+      <thead>
+        <tr>
+          <th>Security Code</th>
+          <th>Net Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of positions">
+          <td>{{ p.securityCode }}</td>
+          <td>{{ p.netQuantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p *ngIf="positions.length === 0">No positions yet.</p>
+  </div>
+</div>

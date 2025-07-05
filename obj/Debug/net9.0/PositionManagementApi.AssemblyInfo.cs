@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PositionManagementApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e63c1df4030e67aec1c3a30d9571e7bb5fb027d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PositionManagementApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PositionManagementApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
