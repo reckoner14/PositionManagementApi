@@ -9,9 +9,6 @@ This project is a full-stack solution for managing equity positions based on tra
 
 ---
 
-
----
-
 ## 🚀 How to Run
 
 ### 🔹 Prerequisites
@@ -19,15 +16,6 @@ This project is a full-stack solution for managing equity positions based on tra
 - [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 - [Node.js + npm](https://nodejs.org/)
 - Angular CLI:
-
-🔹 Backend (.NET Web API)
-bash
-Copy
-Edit
-cd PositionManagementApi
-dotnet run
-Visit:
-📌 Swagger UI → https://localhost:5001/swagger
 
 🔹 Backend (.NET Web API)
 bash
