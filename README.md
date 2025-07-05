@@ -57,9 +57,3 @@ Anunay Goyal
 - Setup instructions
 - Folder structure
 - API details
-- Future enhancements
-
-Let me know if you'd like:
-- A version with screenshots
-- GitHub badges (build passing, Angular version, etc.)
-- Or want this auto-added to your repo now (via `git add README.md && git commit`)
